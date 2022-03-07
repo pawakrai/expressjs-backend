@@ -14,6 +14,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
+//test
+
 const protect = async (req, res, next) => {
   const headerToken = req.headers["authorization"];
   if (!headerToken) {
