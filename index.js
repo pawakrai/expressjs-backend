@@ -14,9 +14,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-//test
-document.write("<h2>Hello! Good Morning! Have a nice day.</h2>");
-
 const protect = async (req, res, next) => {
   const headerToken = req.headers["authorization"];
   if (!headerToken) {
